@@ -1,0 +1,16 @@
+# Calculando o percentual de crescimento de uma empresa
+
+
+valor_atual = float(input("Qual o atual percentual: "))
+valor_ano_anterior = float(input("Qual o percentual do ano anterior: "))
+
+
+taxa_crescimento = (valor_atual - valor_ano_anterior ) / valor_ano_anterior * 100
+print(taxa_crescimento)
+
+# Verificando se ele é bom ou ruim
+
+if taxa_crescimento > valor_ano_anterior:
+    print(f"Taxa de crescimento de {taxa_crescimento:.2f}%")
+else:
+    print(f"Taxa de decrescimento de {taxa_crescimento:.2f}%")
